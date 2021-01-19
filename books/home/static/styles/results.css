@@ -1,0 +1,55 @@
+.results_label {
+    text-align: center;
+    font: normal normal normal 25px/30px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #794549;
+    opacity: 1;
+
+    padding-top: 20px;
+}
+
+.num_results_label {
+    text-align: left;
+    font: normal normal normal 17px/20px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+
+    margin-left: 4%;
+}
+
+#book_panel{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+
+    padding-left: 3%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    
+    margin-bottom: 2%;
+}
+
+#book{
+    width: 100px;
+}
+
+#book_text {
+    text-align: left;
+    font: normal normal normal 17px/20px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+
+    padding-left: 3%;
+}
+
+#title_link {
+    text-align: left;
+    font: normal normal bold 20px/25px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+
+}
+

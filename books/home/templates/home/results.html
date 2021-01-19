@@ -1,0 +1,34 @@
+{% extends "home/search_layout.html" %}
+{% block body %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'styles/results.css' %}">
+
+<h1 class="results_label">Results</h1>
+
+    <div class="page_body">
+        <h1 class="num_results_label">found {{numResults}}...</h1>
+
+        <ul>
+            {% for book in results %}
+            <li>
+                <div class="container" id="book_panel">
+                    <div class="row">
+                        <div class="column">
+                            <img src="{{ book.imgUrl }}" id="book">
+                        </div>
+                        <div class="col-md" id="book_text">
+                            <a href="{% url 'book_page' book.id %}" id="title_link">{{ book.title }}</a> <br>
+                            by {{ book.authors }}<br>
+                            Average Rating: 2.2 - Ratings: 6<br>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+
+{% endblock %}

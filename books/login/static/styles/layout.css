@@ -1,0 +1,130 @@
+#login_box{
+    border: 1px solid #515151;
+    border-radius: 37px;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    padding-top: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-bottom: 3%;
+
+    margin-left: 30%;
+}
+
+#title{
+    text-align: center;
+    font: normal normal normal 60px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #794549;
+    opacity: 1;
+
+    padding-top: 15%;
+    padding-left: 30%
+}
+
+#subtitle_label{
+    text-align: left;
+    font: normal normal normal 35px/40px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #794549;
+    opacity: 1;
+}
+
+label{
+    text-align: left;
+    font: normal normal normal 20px/25px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+}
+
+input{
+    background: #F3F0F0 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 30px;
+    opacity: 1;
+    padding-left: 4%;
+}
+
+#sign_in_button {
+    background: #A2BE7980 0% 0% no-repeat padding-box;
+    border: 1px solid #727563;
+    border-radius: 38px;
+    opacity: 1;
+
+    text-align: center;
+    font: normal normal bold 15px/20px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #8E9279;
+    opacity: 1;
+
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    margin-top: 3%;
+}
+
+#book_container{
+    padding-top: 26%;
+    padding-right: 80%;
+    padding-left: 1%;
+}
+
+img{
+    height: 423px;
+}
+
+#register_label{
+    text-align: right;
+    font: normal normal normal 15px/20px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #8F927E;
+    opacity: 1;
+
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+#login_label{
+    text-align: right;
+    font: normal normal normal 15px/20px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #8F927E;
+    opacity: 1;
+
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+
+#register_button{
+    background: #C4B6B636 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 40px;
+    opacity: 1;
+    float: right;
+
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal bold 15px/20px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #8E9279;
+    opacity: 1;
+
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#disclaimer_label{
+    text-align: left;
+    font: normal normal normal 20px/30px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+
+    padding-top: 5%;
+}

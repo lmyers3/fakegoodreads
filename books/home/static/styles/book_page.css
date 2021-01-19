@@ -1,0 +1,108 @@
+#book_cover {
+    border: 1px solid #707070;
+    opacity: 1;
+    width: 13vw;
+}
+
+#rating_label {
+    text-align: left;
+    font: normal normal normal 20px/25px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+}
+
+#rating_text {
+    text-align: right;
+    font: normal normal normal 35px/40px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #A1AF8B;
+    opacity: 1;
+}
+
+#title_text {
+    text-align: left;
+    font: normal normal bold 30px/35px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+}
+
+#authors_text {
+    text-align: left;
+    font: normal normal normal 20px/25px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+}
+
+#summary_text {
+    text-align: left;
+    font: normal normal normal 17px/23px Yu Gothic UI;
+    letter-spacing: 0px;
+    color: #515151;
+    opacity: 1;
+}
+
+#book_text {
+    padding-right: 10%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+}
+
+#book-col {
+    margin-left: 12%;
+}
+
+#book-row {
+    margin-top: 7%;
+}
+
+hr {
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+.rating {
+    /* position: absolute; */
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+}
+
+.rating label:before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    color: #bbbbbb
+}
+
+.rating label:after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    color: rgb(250, 235, 29);
+    opacity: 0;
+    top: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+    opacity: 1;
+}

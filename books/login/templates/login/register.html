@@ -1,0 +1,23 @@
+{% extends "login/layout.html" %}
+
+{% block subtitle %}Register{% endblock %}
+
+{% block sign_form %}
+    <form action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        <label>Username</label><br>
+        <input type="text" placeholder="username" name="username"><br>
+        <label>Password</label><br>
+        <input type="password" placeholder="password" name="password"><br>
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="password" name="confirmation"><br>
+        <button id="sign_in_button">Sign Up</button><br><br>
+    </form>
+{% endblock %}
+
+{% block form %}
+<form action="{% url 'index' %}">
+    <label id="login_label">Already a member?</label>
+    <button id="register_button">Log In</button>
+</form>
+{% endblock %}

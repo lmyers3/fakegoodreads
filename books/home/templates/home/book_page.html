@@ -1,0 +1,49 @@
+{% extends "home/search_layout.html" %}
+
+{% block body %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/book_page.css' %}">
+
+    <div class="page_body">
+
+        <div class="container">
+            <div class="row" id="book-row">
+                <div class="column" >
+                    <img src="{{ book.imgUrl }}" id="book_cover">
+                    <h3 id="rating_label">Avg Rating:</h3>
+                    <h3 id="rating_text">{{ rating }}</h3>
+                </div>
+                <div class="col-sm" id="book_text">
+                    <h1 id="title_text">{{ book.title }}</h1>
+                    <h2 id="authors_text">by {{ book.authors }}</h2>
+                    <h3 id="summary_text">{{ book.summary }}</h3>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="title_text">Reviews</h1>
+        <hr>
+        <span>{{ message }}</span>
+
+        <form>
+            <div class="rating">
+                <input type="radio" name="star" id="star1"><label for="star1"></label>
+                <input type="radio" name="star" id="star2"><label for="star2"></label>
+                <input type="radio" name="star" id="star3"><label for="star3"></label>
+                <input type="radio" name="star" id="star4"><label for="star4"></label>
+                <input type="radio" name="star" id="star5"><label for="star5"></label>
+            </div>
+            <button>Write a Review</button>
+        </form>
+
+
+
+
+
+    </div>
+
+
+
+
+
+{% endblock %}
